@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { Container } from '@mui/material';
+import Sidenavbar from './Components/SideNavbar';
+import Maincontent from './Components/MainContent';
+import Rightcontent from './Components/RightContent';
+
+import classes from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Fragment>
+      <header className={classes.header}>
+        <div>
+          <p>Lorem Ipsum is simply dummy text of the printing</p>
+        </div>
       </header>
-    </div>
+      <main className={classes.main}>
+        <section className={classes.main_section1}>
+          <Sidenavbar />
+        </section>
+        <section className={classes.main_section2}>
+          <Maincontent />
+        </section>
+        <section className={classes.main_section3}>
+          <Rightcontent />
+        </section>
+      </main>
+    </Fragment>
   );
 }
 

@@ -1,0 +1,30 @@
+
+
+
+.header{
+  background-color: #3772FF;
+  text-align: center;
+  padding: 8px 0;
+
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  min-height: 90vh;
+color:#808191;
+}
+.main_section1{
+  flex: 25%;
+  
+
+}
+
+.main_section2{
+  flex: 50%;
+  
+}
+
+.main_section3{
+  flex: 25%;
+  
+}
